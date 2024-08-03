@@ -2,8 +2,8 @@
 /**
  * Write a description of class MarksModel here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Gopisanth Kobithasan)
+ * @version (20240803)
  */
 public class MarksModel
 {
@@ -28,6 +28,22 @@ public class MarksModel
         this.studentId = studentId;
         this.marks = marks;
         calculateTotal();
+    }
+
+    public String getFullName() {
+        return lastName + ", " + firstName;
+    }
+
+    public String getStudentId() {
+        return studentId;
+    }
+
+    public double[] getMarks() {
+        return marks;
+    }
+
+    public double getTotal() {
+        return total;
     }
     
     
