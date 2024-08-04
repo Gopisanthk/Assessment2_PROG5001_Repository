@@ -8,7 +8,8 @@
 import java.util.Scanner;
 public class Marks_Main
 {
-public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         MarksView view = new MarksView(); // Create the view instance.
         MarksController controller = new MarksController(view); // Create the controller instance.
 
@@ -16,6 +17,7 @@ public static void main(String[] args) {
         String filename = "prog5001_students_grade_2022.csv"; 
         // Load student data from the file.
         controller.loadMarksModels(filename); 
-
+        // Start the menu system for user interactions.
+        controller.startMenu(); 
     }
 }

@@ -11,7 +11,8 @@ import java.util.List;
 public class MarksView
 {
     //display single student details
-    public void displayMarksModel(MarksModel marksmodel) {
+    public void displayMarksModel(MarksModel marksmodel) 
+    {
         System.out.printf("Name: %s, ID: %s, Marks: %s, Total: %.1f\n",
             marksmodel.getFullName(), marksmodel.getStudentId(),
             arrayToString(marksmodel.getMarks()), marksmodel.getTotal());
@@ -19,12 +20,15 @@ public class MarksView
     
     
     //convert the array of doubles to string format
-    private String arrayToString(double[] array) {
+    private String arrayToString(double[] array) 
+    {
         StringBuilder sb = new StringBuilder();
         sb.append("[");
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 0; i < array.length; i++) 
+        {
             sb.append(array[i]);
-            if (i < array.length - 1) {
+            if (i < array.length - 1) 
+            {
                 sb.append(", ");
             }
         }
@@ -33,14 +37,17 @@ public class MarksView
     }   
     
     //display student list
-    public void displayMarksModels(List<MarksModel> marksmodels) {
-        for (MarksModel marksmodel : marksmodels) {
+    public void displayMarksModels(List<MarksModel> marksmodels) 
+    {
+        for (MarksModel marksmodel : marksmodels) 
+        {
             displayMarksModel(marksmodel);
         }
     }
     
     //displays message to the user
-    public void displayMessage(String message) {
+    public void displayMessage(String message) 
+    {
         System.out.println(message);
     }
     

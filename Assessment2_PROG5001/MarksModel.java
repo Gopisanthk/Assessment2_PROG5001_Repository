@@ -15,14 +15,17 @@ public class MarksModel
     
     
     //calculate the total marks
-     private void calculateTotal() {
+    private void calculateTotal() 
+    {
         total = 0;
-        for (double mark : marks) {
+        for (double mark : marks) 
+        {
             total += mark;
         }
     }
     
-        public MarksModel(String lastName, String firstName, String studentId, double[] marks) {
+    public MarksModel(String lastName, String firstName, String studentId, double[] marks) 
+    {
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentId = studentId;
@@ -30,22 +33,25 @@ public class MarksModel
         calculateTotal();
     }
 
-    public String getFullName() {
+    public String getFullName() 
+    {
         return lastName + ", " + firstName;
     }
 
-    public String getStudentId() {
+    public String getStudentId() 
+    {
         return studentId;
     }
 
-    public double[] getMarks() {
+    public double[] getMarks() 
+    {
         return marks;
     }
 
-    public double getTotal() {
+    public double getTotal() 
+    {
         return total;
-    }
-    
-    
+    } 
+
 
 }
